@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+aiohttp = "*"
+asyncio = "*"
+asyncpg = "*"
+fastapi = "*"
+fastapi-utils = "*"
+httpx = "*"
+python-jose = "*"
+python-multipart = "*"
+loguru = "*"
+passlib = "*"
+sqlalchemy = "*"
+uvicorn = "*"
+
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
+
+[packages.uvicorn]
+extras = [ "standard",]
+
+[packages.pydantic]
+extras = [ "dotenv"]
